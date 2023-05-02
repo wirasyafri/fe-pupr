@@ -7,6 +7,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\FolderController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,11 +30,16 @@ Route::get('/login', [LoginController::class, 'index']);
 Route::get('/register', [RegisterController::class, 'index']);
 Route::get('/forgot-password', [ForgotPasswordController::class, 'index']);
 
+Route::get('/search', [SearchController::class, 'index']);
 Route::get('/entry', [EntryController::class, 'index']);
 Route::prefix('folder')->group(function () {
     Route::get('/dokumen', [FolderController::class, 'dokumen']);
     Route::get('/data-primer', [FolderController::class, 'dataPrimer']);
     Route::get('/data-sekunder', [FolderController::class, 'dataSekunder']);
+});
+Route::prefix('user')->group(function () {
+    Route::get('/list', [UserController::class, 'index']);
+    Route::get('/add', [UserController::class, 'add']);
 });
 
 

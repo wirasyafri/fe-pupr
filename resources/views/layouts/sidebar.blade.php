@@ -34,7 +34,13 @@
             </a>
         </li>
 
-        <li class="menu-item {{ $child=='/entry' ? 'active' : '' }}">
+        <li class="menu-item {{ $child=='search' ? 'active' : '' }}">
+            <a href="{{ url('') }}/search" class="menu-link">
+                <i class="menu-icon tf-icons bx bxs-search"></i>
+                <div data-i18n="Search Data">Search Data</div>
+            </a>
+        </li>
+        <li class="menu-item {{ $child=='entry' ? 'active' : '' }}">
             <a href="{{ url('') }}/entry" class="menu-link">
                 <i class="menu-icon tf-icons bx bxs-file-plus"></i>
                 <div data-i18n="Entry Data">Entry Data</div>
@@ -66,12 +72,31 @@
         </li>
         
         <!-- E-Dokumen -->
-        <li class="menu-item">
+        {{-- <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bxs-file-doc"></i>
                 <div data-i18n="Form Layouts">E-Dokumen</div>
             </a>
             <ul class="menu-sub">
+            </ul>
+        </li> --}}
+        <!-- Folder -->
+        <li class="menu-item {{ $parent=='/user' ? 'active open' : '' }}">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-user"></i>
+                <div data-i18n="User">Manajemen user</div>
+            </a>
+            <ul class="menu-sub">
+                <li class="menu-item {{ $child=='user/list' ? 'active' : '' }}">
+                    <a href="{{ url('') }}/user/list" class="menu-link">
+                        <div data-i18n="List">Data User</div>
+                    </a>
+                </li>
+                <li class="menu-item {{ $child=='user/add' ? 'active' : '' }}">
+                    <a href="{{ url('') }}/user/add" class="menu-link">
+                        <div data-i18n="Tambah User">Tambah User</div>
+                    </a>
+                </li>
             </ul>
         </li>
     </ul>
