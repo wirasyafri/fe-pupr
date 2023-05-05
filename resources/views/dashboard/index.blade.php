@@ -33,7 +33,7 @@
             </div>
             {{-- quick access --}}
             <div class="col-12">
-                <div class="card mb-4">
+                {{-- <div class="card mb-4">
                     <div class="card-body">
                         <div class="demo-inline-spacing mx-auto">
                             <a href="{{ url('') }}/entry" type="button"
@@ -45,85 +45,65 @@
                         </div>
                     </div>
                     <hr class="m-0" />
+                </div> --}}
+
+                <!-- Text alignment -->
+                <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>Quick Access</h4>
+                <div class="row mb-5">
+                    <div class="col-md-6 col-lg-3" onclick="location.href='{{ url('') }}/entry';" style="cursor:pointer;">
+                        <div class="card mb-3 p-2">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('assets/img/icons/docs/pdf-icon.png') }}"
+                                        class="card-img img-fluid" alt="quick access document">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">Dokumen</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" onclick="location.href='{{ url('') }}/folder/data-primer';" style="cursor:pointer;">
+                        <div class="card mb-3 p-2">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('assets/img/icons/folders/data-primer.png') }}"
+                                        class="card-img img-fluid" alt="quick access document">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">Data Primer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3" onclick="location.href='{{ url('') }}/folder/data-sekunder';" style="cursor:pointer;">
+                        <div class="card mb-3 p-2">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="{{ asset('assets/img/icons/folders/data-sekunder.png') }}"
+                                        class="card-img img-fluid" alt="quick access document">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">Data Sekunder</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!--/ Text alignment -->
                 <!-- recent file -->
                 <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>Recent Files</h4>
                 <div class="row">
                     <div class="col-xl">
                         <div class="card mb-4">
                             <div class="card">
-                                <div class="table-responsive text-nowrap">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Nama</th>
-                                                <th>File Size</th>
-                                                <th>Last Modified</th>
-                                                <th>Year</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="table-border-bottom-0">
-                                            <tr>
-                                                <td>
-                                                    <ul
-                                                        class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom"
-                                                            data-bs-placement="top" class="avatar avatar-xs pull-up"
-                                                            title="Laporan Akhir">
-                                                            <i class="menu-icon tf-icons bx bx-detail"></i>
-                                                            {{-- <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" /> --}}
-                                                        </li>
-                                                        <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                                        <strong>Laporan
-                                                            Akhir</strong>
-                                                </td>
-                                                <td>177 MB</td>
-                                                <td>
-                                                    May 7, 2023
-                                                </td>
-                                                <td>2023</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <ul
-                                                        class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom"
-                                                            data-bs-placement="top" class="avatar avatar-xs pull-up"
-                                                            title="Laporan Akhir">
-                                                            <i class="menu-icon tf-icons bx bx-detail"></i>
-                                                            {{-- <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" /> --}}
-                                                        </li>
-                                                        <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                                        <strong>Kas Maret</strong>
-                                                </td>
-                                                <td>20 MB</td>
-                                                <td>
-                                                    May 7, 2023
-                                                </td>
-                                                <td>2023</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <ul
-                                                        class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom"
-                                                            data-bs-placement="top" class="avatar avatar-xs pull-up"
-                                                            title="Laporan Akhir">
-                                                            <i class="menu-icon tf-icons bx bx-detail"></i>
-                                                            {{-- <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" /> --}}
-                                                        </li>
-                                                        <i class="fab fa-angular fa-lg text-danger me-3"></i>
-                                                        <strong>Kegiatan Ramadhan</strong>
-                                                </td>
-                                                <td>100 MB</td>
-                                                <td>
-                                                    May 7, 2023
-                                                </td>
-                                                <td>2023</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                @include('listData.tableOnly')
                             </div>
                         </div>
                     </div>

@@ -13,165 +13,59 @@
             <div class="col-xl">
                 <div class="card mb-4">
                     <div class="card">
-                        <div class="table-responsive text-nowrap">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Nama</th>
-                                        <th>File Size</th>
-                                        <th>Last Modified</th>
-                                        <th>Year</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="table-border-bottom-0">
-                                    <tr>
-                                        <td>
-                                            <ul
-                                                class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                                <li data-bs-toggle="tooltip" data-popup="tooltip-custom"
-                                                    data-bs-placement="top" class="avatar avatar-xs pull-up"
-                                                    title="Laporan Akhir">
-                                                    <i class="menu-icon tf-icons bx bx-detail"></i>
-                                                    {{-- <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" /> --}}
-                                                </li>
-                                                <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Laporan
-                                                    Akhir</strong>
-                                        </td>
-                                        <td>177 MB</td>
-                                        <td>
-                                            May 7, 2023
-                                        </td>
-                                        <td>2022</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
-                                                    data-bs-toggle="dropdown">
-                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-download me-1"></i> Download</a>
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-edit-alt me-1"></i> Edit</a>
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-trash me-1"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <ul
-                                                class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                                <li data-bs-toggle="tooltip" data-popup="tooltip-custom"
-                                                    data-bs-placement="top" class="avatar avatar-xs pull-up"
-                                                    title="Laporan Akhir">
-                                                    <i class="menu-icon tf-icons bx bx-detail"></i>
-                                                    {{-- <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" /> --}}
-                                                </li>
-                                                <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Laporan
-                                                    Akhir</strong>
-                                        </td>
-                                        <td>177 MB</td>
-                                        <td>
-                                            May 7, 2023
-                                        </td>
-                                        <td>2022</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
-                                                    data-bs-toggle="dropdown">
-                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-download me-1"></i>
-                                                        Download</a>
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-edit-alt me-1"></i> Edit</a>
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-trash me-1"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <ul
-                                                class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                                <li data-bs-toggle="tooltip" data-popup="tooltip-custom"
-                                                    data-bs-placement="top" class="avatar avatar-xs pull-up"
-                                                    title="Laporan Akhir">
-                                                    <i class="menu-icon tf-icons bx bx-detail"></i>
-                                                    {{-- <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" /> --}}
-                                                </li>
-                                                <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Laporan
-                                                    Akhir</strong>
-                                        </td>
-                                        <td>177 MB</td>
-                                        <td>
-                                            May 7, 2023
-                                        </td>
-                                        <td>2022</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
-                                                    data-bs-toggle="dropdown">
-                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-download me-1"></i> Download</a>
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-edit-alt me-1"></i> Edit</a>
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-trash me-1"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <ul
-                                                class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                                <li data-bs-toggle="tooltip" data-popup="tooltip-custom"
-                                                    data-bs-placement="top" class="avatar avatar-xs pull-up"
-                                                    title="Laporan Akhir">
-                                                    <i class="menu-icon tf-icons bx bx-detail"></i>
-                                                    {{-- <img src="../assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" /> --}}
-                                                </li>
-                                                <i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>Laporan
-                                                    Akhir</strong>
-                                        </td>
-                                        <td>177 MB</td>
-                                        <td>
-                                            May 7, 2023
-                                        </td>
-                                        <td>2022</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
-                                                    data-bs-toggle="dropdown">
-                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-download me-1"></i> Download</a>
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-edit-alt me-1"></i> Edit</a>
-                                                    <a class="dropdown-item" href="javascript:void(0);"><i
-                                                            class="bx bx-trash me-1"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        @include('listData.tableAction')
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- / Content -->
-    @endsection
+
+    {{-- preview dokumen --}}
+    {{-- <div id="modal_preview" class="modal fade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="width: 100%">
+            <div class="modal-content" style="width: 150%">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <iframe id="modal_preview_detail" name="modal_preview_detail" width="100%" height="850px"></iframe>
+                </div>
+            </div>
+        </div>
+    </div> --}}
+    {{-- end preview dokumen --}}
+
+    {{-- test preview dokumen 2 --}}
+    <div class="modal fade" id="modal_preview" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCenterTitle">Preview Dokumen</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="modal_preview_detail" name="modal_preview_detail" width="100%" height="750px"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / Content -->
+@endsection
+
+
+@section('customJS')
+
+<script>
+    function openPopUp() {
+        // var popup = document.getElementById('popup-iframe');
+        // popup.style.display = 'block';
+        $("#modal_preview_detail").attr("src",
+            "{{ asset('assets/dokumen/desain ke 2.pdf') }}")
+        $("#modal_preview").modal("show");
+
+    }
+
+</script>
+@endsection

@@ -1,0 +1,41 @@
+<select class="form-select" name="province">
+    <option>Semua</option>
+    <option value="1">Nanggroe Aceh Darussalam</option>
+    <option value="2">Sumatera Utara</option>
+    <option value="3">Sumatera Selatan</option>
+    <option value="3">Sumatera Barat</option>
+    <option value="3">Bengkulu</option>
+    <option value="3">Riau</option>
+    <option value="3">Kepulauan Riau</option>
+    <option value="3">Jambi</option>
+    <option value="3">Lampung</option>
+    <option value="3">Bangka Belitung</option>
+    <option value="3">Kalimantan Barat</option>
+    <option value="3">Kalimantan Timur</option>
+    <option value="3">Kalimantan Selatan</option>
+    <option value="3">Kalimantan Tengah</option>
+    <option value="3">Kalimantan Utara</option>
+    <option value="3">Banten</option>
+    <option value="3">DKI Jakarta</option>
+    <option value="3">Jawa Barat</option>
+    <option value="3">Jawa Tengah</option>
+    <option value="3">Daerah Istimewa Yogyakarta</option>
+    <option value="3">Jawa Timur</option>
+    <option value="3">Bali</option>
+    <option value="3">Nusa Tenggara Timur</option>
+    <option value="3">Nusa Tenggara Barat</option>
+    <option value="3">Gorontalo</option>
+    <option value="3">Sulawesi Barat</option>
+    <option value="3">Sulawesi Tengah</option>
+    <option value="3">Sulawesi Utara</option>
+    <option value="3">Sulawesi Tenggara</option>
+    <option value="3">Sulawesi Selatan</option>
+    <option value="3">Maluku Utara</option>
+    <option value="3">Maluku</option>
+    <option value="3">Papua Barat</option>
+    <option value="3">Papua</option>
+    <option value="3">Papua Tengah</option>
+    <option value="3">Papua Pegunungan</option>
+    <option value="3">Papua Selatan</option>
+    <option value="3">Papua Barat Daya</option>
+</select>

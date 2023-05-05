@@ -7,7 +7,44 @@
 
     <div class="container-xxl flex-grow-1 container-p-y">
         <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">User /</span>List</h4>
-
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="demo-inline-spacing mx-auto">
+                    <a href="{{ url('') }}/user/add" type="button"
+                        class="btn btn-lg btn-primary">+ User</a>
+                </div>
+            </div>
+            <hr class="m-0" />
+        </div>
+        <div class="row">
+            <div class="col-xl">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label" for="basic-default-fullname">Nama</label>
+                                <input type="text" class="form-control" id="basic-default-fullname"
+                                    placeholder="Nama" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="basic-default-fullname">Username</label>
+                                <input type="text" class="form-control" id="basic-default-fullname"
+                                    placeholder="Username" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="defaultSelect" class="form-label">Kategori Admin</label>
+                                  <select id="defaultSelect" class="form-select">
+                                    {{-- <option>Default select</option> --}}
+                                    <option value="1">Admin Super</option>
+                                    <option value="2">Admin Basis</option>
+                                  </select>
+                              </div>
+                            <button type="submit" class="btn btn-primary">Cari</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Basic Layout -->
         <div class="row">
             <div class="col-xl">
@@ -15,15 +52,14 @@
                     <div class="card">
                         <div class="table-responsive text-nowrap">
                             <table class="table">
-                                <thead>
+                                {{-- <thead>
                         <tr>
                           <th>Nama</th>
                           <th>Username</th>
                           <th>Email</th>
                           <th>Role</th>
-                          {{-- <th>Actions</th> --}}
                         </tr>
-                      </thead>
+                      </thead> --}}
                                 <tbody class="table-border-bottom-0">
                                     <tr>
                                         <td>

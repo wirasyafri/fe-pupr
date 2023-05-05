@@ -9,6 +9,7 @@ use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\FolderController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\FaqController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,7 @@ Route::get('/register', [RegisterController::class, 'index']);
 Route::get('/forgot-password', [ForgotPasswordController::class, 'index']);
 
 Route::get('/search', [SearchController::class, 'index']);
+Route::get('/faq', [FaqController::class, 'index']);
 Route::get('/entry', [EntryController::class, 'index']);
 Route::prefix('folder')->group(function () {
     Route::get('/dokumen', [FolderController::class, 'dokumen']);
@@ -42,5 +44,6 @@ Route::prefix('user')->group(function () {
     Route::get('/add', [UserController::class, 'add']);
 });
 
-
+//coba component
+Route::post('/hehe', [SearchController::class, 'hehe']);
 

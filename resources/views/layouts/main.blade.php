@@ -64,6 +64,8 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
+    @yield('customCss')
+
   </head>
 
   <body>
@@ -228,19 +230,6 @@
 				<!-- /Search -->
   
 				<ul class="navbar-nav flex-row align-items-center ms-auto">
-				  <!-- Place this tag where you want the button to render. -->
-				  <li class="nav-item lh-1 me-3">
-					<a
-					  class="github-button"
-					  href="https://github.com/themeselection/sneat-html-admin-template-free"
-					  data-icon="octicon-star"
-					  data-size="large"
-					  data-show-count="true"
-					  aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
-					  >Star</a
-					>
-				  </li>
-  
 				  <!-- User -->
 				  <li class="nav-item navbar-dropdown dropdown-user dropdown">
 					<a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
@@ -352,5 +341,7 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    @yield('customJS')
   </body>
 </html>

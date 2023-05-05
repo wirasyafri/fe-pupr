@@ -1,5 +1,8 @@
 @extends('layouts.main')
 
+@section('customCss')
+    <link rel="stylesheet" href="../assets/css/yearpicker.css" />
+@endsection
 @section('container')
 <!-- Content wrapper -->
 <div class="content-wrapper">
@@ -12,16 +15,21 @@
         <div class="row">
             <div class="col-xl">
                 <div class="card mb-4">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        {{-- <h5 class="mb-0">Basic Layout</h5>
-                  <small class="text-muted float-end">Default label</small> --}}
-                    </div>
                     <div class="card-body">
-                        <form>
+                        <form action="{{url('')}}/hehe" method="POST" enctype="multipart/form-data" class="user">
+                            @csrf
                             <div class="mb-3">
                                 <label class="form-label" for="basic-default-fullname">Nama File</label>
                                 <input type="text" class="form-control" id="basic-default-fullname"
-                                    placeholder="Nama File" />
+                                    placeholder="Nama File" name="name" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="html5-month-input" class="col-md-2 col-form-label">Tahun</label>
+                                <input type="text" class="yearpicker form-control" value="" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="defaultSelect" class="form-label">Lokasi</label>
+                                <x-input.selectProvince/>
                             </div>
                             <div class="mb-3">
                                 <label for="defaultSelect" class="form-label">Data</label>
@@ -154,3 +162,9 @@
     </div>
     <!-- / Content -->
     @endsection
+    
+@section('customJS')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="../assets/js/yearpicker.js"></script>
+@endsection

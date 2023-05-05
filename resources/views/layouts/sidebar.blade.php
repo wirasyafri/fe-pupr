@@ -99,6 +99,13 @@
                 </li>
             </ul>
         </li>
+        {{-- FAQ --}}
+        <li class="menu-item {{ $child=='faq' ? 'active' : '' }}">
+            <a href="{{ url('') }}/faq" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-question-mark"></i>
+                <div data-i18n="FAQ">FAQ</div>
+            </a>
+        </li>
     </ul>
 </aside>
 <!-- / Menu -->

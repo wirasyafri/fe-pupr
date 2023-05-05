@@ -36,7 +36,6 @@
                           {{-- <option>Default select</option> --}}
                           <option value="1">Admin Super</option>
                           <option value="2">Admin Basis</option>
-                          <option value="3">Admin TU</option>
                         </select>
                     </div>
                     <div class="mb-3">

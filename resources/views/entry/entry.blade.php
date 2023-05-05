@@ -1,5 +1,8 @@
 @extends('layouts.main')
 
+@section('customCss')
+    <link rel="stylesheet" href="../assets/css/yearpicker.css" />
+@endsection
 @section('container')
     <!-- Content wrapper -->
     <div class="content-wrapper">
@@ -27,9 +30,13 @@
                       <input type="text" class="form-control" id="basic-default-company" placeholder="Nama Kegiatan" />
                     </div>
                     <div class="mb-3">
-                      <label class="form-label" for="basic-default-company">Tahun Kegiatan</label>
-                      <input class="form-control" type="date" value="" id="html5-date-input" />
-                    </div>
+                      <label for="html5-month-input" class="col-md-2 col-form-label">Tahun Kegiatan</label>
+                      <input type="text" class="yearpicker form-control" value="" />
+                  </div>
+                  <div class="mb-3">
+                      <label for="defaultSelect" class="form-label">Lokasi</label>
+                      <x-input.selectProvince/>
+                  </div>
                     <div class="mb-3">
                       <label for="defaultSelect" class="form-label">Data</label>
                       <select id="defaultSelect" class="form-select">
@@ -76,4 +83,10 @@
           </div>
         </div>
         <!-- / Content -->
+@endsection
+
+@section('customJS')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="../assets/js/yearpicker.js"></script>
 @endsection
