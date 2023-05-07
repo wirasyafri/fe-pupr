@@ -50,46 +50,46 @@
                 <!-- Text alignment -->
                 <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span>Quick Access</h4>
                 <div class="row mb-5">
-                    <div class="col-md-6 col-lg-3" onclick="location.href='{{ url('') }}/entry';" style="cursor:pointer;">
+                    <div class="col" onclick="location.href='{{ url('') }}/entry';" style="cursor:pointer;">
                         <div class="card mb-3 p-2">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 m-0 text-center">
                                     <img src="{{ asset('assets/img/icons/docs/pdf-icon.png') }}"
-                                        class="card-img img-fluid" alt="quick access document">
+                                        class="card-img" style="max-width: 100px;" alt="quick access document">
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <p class="card-text">Dokumen</p>
+                                <div class="col-md-8 align-self-center">
+                                    <div class="card-body px-0">
+                                        <p class="card-text"  style="text-align: center; font-size:18px; ">Dokumen</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3" onclick="location.href='{{ url('') }}/folder/data-primer';" style="cursor:pointer;">
+                    <div class="col" onclick="location.href='{{ url('') }}/folder/data-primer';" style="cursor:pointer;">
                         <div class="card mb-3 p-2">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 text-center">
                                     <img src="{{ asset('assets/img/icons/folders/data-primer.png') }}"
-                                        class="card-img img-fluid" alt="quick access document">
+                                        class="card-img img-fluid"  style="max-width: 100px;" alt="quick access document">
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <p class="card-text">Data Primer</p>
+                                <div class="col-md-8 align-self-center">
+                                    <div class="card-body px-2">
+                                        <p class="card-text" style="text-align: center; font-size:18px;">Data Primer</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3" onclick="location.href='{{ url('') }}/folder/data-sekunder';" style="cursor:pointer;">
-                        <div class="card mb-3 p-2">
+                    <div class="col" onclick="location.href='{{ url('') }}/folder/data-sekunder';" style="cursor:pointer;">
+                        <div class="card mb-3 p-2" >
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-4 text-center">
                                     <img src="{{ asset('assets/img/icons/folders/data-sekunder.png') }}"
-                                        class="card-img img-fluid" alt="quick access document">
+                                        class="card-img img-fluid"  style="max-width: 100px;" alt="quick access document">
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <p class="card-text">Data Sekunder</p>
+                                <div class="col-md-8 align-self-center">
+                                    <div class="card-body px-0">
+                                        <p class="card-text"   style="text-align: center; font-size:18px;">Data Sekunder</p>
                                     </div>
                                 </div>
                             </div>
