@@ -69,7 +69,7 @@
 
     @yield('container')
 
-    <!-- / Content -->
+    <!-- Content -->
 
     {{-- <div class="buy-now">
       <a
