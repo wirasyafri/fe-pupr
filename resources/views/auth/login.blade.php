@@ -1,15 +1,14 @@
 @extends('auth.mainAuth')
 @section('container')
 
-<div class="container-fluid" style="height: 100%;margin : 0;padding:0;">
-
+<div class="container-fluid px-0" style="width: 100%; min-height:100vh">
     <!-- Register -->
-    <div class="row position-relative ">
-        <div class="col col-md-6 d-flex p-0 justify-content-center position-absoulute" style="border-color: red;">
+    <div class="row ">
+        <div class="col col-md-6 d-flex p-0 justify-content-center" style="height:100vh;max-width:100%;min-height:0%;min-width:0px;">
             <img class="m-0" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-JdbM280Rs2Y%2FXjxgQTF6HEI%2FAAAAAAAAAAg%2FYdyLp9V1tDkp2-kaFXCcgc9IeQNxt5o1gCLcBGAsYHQ%2Fs1600%2Fdummy.jpg&f=1&nofb=1&ipt=3c8f3d2c29ec7f51c9b6b49b45d6f443e5f931da80ca0f88f40bbe02faebe9bd&ipo=images">
         </div>
-        <div class="col col-md-6 d-flex justify-content-center align-items-center" style=" border-color: green; background-color:#2D3F75 ;">
-            <div class="" style="width: 500px;">
+        <div class="col col-md-6 d-flex justify-content-center align-items-center" style="background-color:#2D3F75;">
+            <div style="width: 500px;">
                 <div class="text-center">
                     <h1 class="mb-2 fw-bolder" style="color: #fff;">BATARA</h1>
                     <h3 class=" fw-bolder" style="color: #fff;">Basis Data Rawa</h3>
