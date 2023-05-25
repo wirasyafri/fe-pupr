@@ -1,7 +1,7 @@
 <!-- Menu -->
 {{-- <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme"> --}}
-    	
-    <aside id="layout-menu" class="menu bg-menu-theme">
+
+<aside id="layout-menu" class="menu bg-menu-theme">
 
     <div class="app-brand demo">
         <a href="index.html" class="app-brand-link">
@@ -16,63 +16,62 @@
         </a>
     </div>
 
-    <div class="menu-inner-shadow"></div>
-
-    <ul class="menu-inner py-1">
-        @php
+   
+        <ul class="menu-inner py-1" style="min-width: fit-content;">
+            @php
             $parent = request()->route()->getPrefix();
             $child = request()->route()->uri();
-        @endphp
-        {{-- {{
+            @endphp
+            {{-- {{
             dd($child)
         }} --}}
-        <!-- Dashboard -->
-        <li class="menu-item {{ $child=='/' ? 'active' : '' }}">
-            <a href="{{ url('') }}/" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
-            </a>
-        </li>
+            <!-- Dashboard -->
+            <li class="menu-item {{ $child=='/' ? 'active' : '' }}">
+                <a href="{{ url('') }}/" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                    <div data-i18n="Analytics">Dashboard</div>
+                </a>
+            </li>
 
-        <li class="menu-item {{ $child=='search' ? 'active' : '' }}">
-            <a href="{{ url('') }}/search" class="menu-link">
-                <i class="menu-icon tf-icons bx bxs-search"></i>
-                <div data-i18n="Search Data">Search Data</div>
-            </a>
-        </li>
-        <li class="menu-item {{ $child=='entry' ? 'active' : '' }}">
-            <a href="{{ url('') }}/entry" class="menu-link">
-                <i class="menu-icon tf-icons bx bxs-file-plus"></i>
-                <div data-i18n="Entry Data">Entry Data</div>
-            </a>
-        </li>
-        <!-- Folder -->
-        <li class="menu-item {{ $parent=='/folder' ? 'active open' : '' }}">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-detail"></i>
-                <div data-i18n="Folder">Folder</div>
-            </a>
-            <ul class="menu-sub">
-                <li class="menu-item {{ $child=='folder/dokumen' ? 'active' : '' }}">
-                    <a href="{{ url('') }}/folder/dokumen" class="menu-link">
-                        <div data-i18n="Dokumen">Dokumen</div>
-                    </a>
-                </li>
-                <li class="menu-item {{ $child=='folder/data-primer' ? 'active' : '' }}">
-                    <a href="{{ url('') }}/folder/data-primer" class="menu-link">
-                        <div data-i18n="Data Primer">Data Primer</div>
-                    </a>
-                </li>
-                <li class="menu-item {{ $child=='folder/data-sekunder' ? 'active' : '' }}">
-                    <a href="{{ url('') }}/folder/data-sekunder" class="menu-link">
-                        <div data-i18n="Data Sekunder">Data Sekunder</div>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        
-        <!-- E-Dokumen -->
-        {{-- <li class="menu-item">
+            <li class="menu-item {{ $child=='search' ? 'active' : '' }}">
+                <a href="{{ url('') }}/search" class="menu-link">
+                    <i class="menu-icon tf-icons bx bxs-search"></i>
+                    <div data-i18n="Search Data">Search Data</div>
+                </a>
+            </li>
+            <li class="menu-item {{ $child=='entry' ? 'active' : '' }}">
+                <a href="{{ url('') }}/entry" class="menu-link">
+                    <i class="menu-icon tf-icons bx bxs-file-plus"></i>
+                    <div data-i18n="Entry Data">Entry Data</div>
+                </a>
+            </li>
+            <!-- Folder -->
+            <li class="menu-item {{ $parent=='/folder' ? 'active open' : '' }}">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-detail"></i>
+                    <div data-i18n="Folder">Folder</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item {{ $child=='folder/dokumen' ? 'active' : '' }}">
+                        <a href="{{ url('') }}/folder/dokumen" class="menu-link">
+                            <div data-i18n="Dokumen">Dokumen</div>
+                        </a>
+                    </li>
+                    <li class="menu-item {{ $child=='folder/data-primer' ? 'active' : '' }}">
+                        <a href="{{ url('') }}/folder/data-primer" class="menu-link">
+                            <div data-i18n="Data Primer">Data Primer</div>
+                        </a>
+                    </li>
+                    <li class="menu-item {{ $child=='folder/data-sekunder' ? 'active' : '' }}">
+                        <a href="{{ url('') }}/folder/data-sekunder" class="menu-link">
+                            <div data-i18n="Data Sekunder">Data Sekunder</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- E-Dokumen -->
+            {{-- <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bxs-file-doc"></i>
                 <div data-i18n="Form Layouts">E-Dokumen</div>
@@ -80,32 +79,50 @@
             <ul class="menu-sub">
             </ul>
         </li> --}}
-        <!-- Folder -->
-        <li class="menu-item {{ $parent=='/user' ? 'active open' : '' }}">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-user"></i>
-                <div data-i18n="User">Manajemen user</div>
-            </a>
-            <ul class="menu-sub">
-                <li class="menu-item {{ $child=='user/list' ? 'active' : '' }}">
-                    <a href="{{ url('') }}/user/list" class="menu-link">
-                        <div data-i18n="List">Data User</div>
-                    </a>
-                </li>
-                <li class="menu-item {{ $child=='user/add' ? 'active' : '' }}">
-                    <a href="{{ url('') }}/user/add" class="menu-link">
-                        <div data-i18n="Tambah User">Tambah User</div>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        {{-- FAQ --}}
-        <li class="menu-item {{ $child=='faq' ? 'active' : '' }}">
-            <a href="{{ url('') }}/faq" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-question-mark"></i>
-                <div data-i18n="FAQ">FAQ</div>
-            </a>
-        </li>
-    </ul>
+            <!-- Folder -->
+            <li class="menu-item {{ $parent=='/user' ? 'active open' : '' }}">
+                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                    <i class="menu-icon tf-icons bx bx-user"></i>
+                    <div data-i18n="User">Manajemen user</div>
+                </a>
+                <ul class="menu-sub">
+                    <li class="menu-item {{ $child=='user/list' ? 'active' : '' }}">
+                        <a href="{{ url('') }}/user/list" class="menu-link">
+                            <div data-i18n="List">Data User</div>
+                        </a>
+                    </li>
+                    <li class="menu-item {{ $child=='user/add' ? 'active' : '' }}">
+                        <a href="{{ url('') }}/user/add" class="menu-link">
+                            <div data-i18n="Tambah User">Tambah User</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            {{-- FAQ --}}
+            <li class="menu-item {{ $child=='faq' ? 'active' : '' }}">
+                <a href="{{ url('') }}/faq" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-question-mark"></i>
+                    <div data-i18n="FAQ">FAQ</div>
+                </a>
+            </li>
+        </ul>
+ 
+    
+    <div class=" d-flex align-items-stretch mb-5 pt-3" style="border-top: 2px solid;" >
+        <ul class="menu-inner py-1 ">
+            <li class="menu-item {{ $child=='faq' ? 'active' : '' }}">
+                <a href="{{ url('') }}/faq" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-cog"></i>
+                    <div data-i18n="FAQ">Settings</div>
+                </a>
+            </li>
+            <li class="menu-item {{ $child=='faq' ? 'active' : '' }}">
+                <a href="{{ url('') }}/faq" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-power-off"></i>
+                    <div data-i18n="FAQ">Log Out</div>
+                </a>
+            </li>
+        </ul>
+    </div>
 </aside>
 <!-- / Menu -->
