@@ -1,13 +1,13 @@
 @extends('auth.mainAuth')
 @section('container')
 
-<div class="container-fluid px-0" style="width: 100%; min-height:100vh">
+<div class="container-fluid px-0">
     <!-- Register -->
     <div class="row ">
-        <div class="col col-md-6 d-flex p-0 justify-content-center" style="height:100vh;max-width:100%;min-height:0%;min-width:0px;">
-            <img class="m-0" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-JdbM280Rs2Y%2FXjxgQTF6HEI%2FAAAAAAAAAAg%2FYdyLp9V1tDkp2-kaFXCcgc9IeQNxt5o1gCLcBGAsYHQ%2Fs1600%2Fdummy.jpg&f=1&nofb=1&ipt=3c8f3d2c29ec7f51c9b6b49b45d6f443e5f931da80ca0f88f40bbe02faebe9bd&ipo=images">
+        <div class="col col-1 col-md-6 d-flex p-0 justify-content-center" id="col-1">
+            <img class="m-0" id="gambar" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-JdbM280Rs2Y%2FXjxgQTF6HEI%2FAAAAAAAAAAg%2FYdyLp9V1tDkp2-kaFXCcgc9IeQNxt5o1gCLcBGAsYHQ%2Fs1600%2Fdummy.jpg&f=1&nofb=1&ipt=3c8f3d2c29ec7f51c9b6b49b45d6f443e5f931da80ca0f88f40bbe02faebe9bd&ipo=images"  style="height:100vh;">
         </div>
-        <div class="col col-md-6 d-flex justify-content-center align-items-center" style="background-color:#2D3F75;">
+        <div id="col-2" class="col col-2 col-md-6 d-flex justify-content-center align-items-center" style="background-color:#2D3F75; border: 2px solid;">
             <div style="width: 500px;">
                 <div class="text-center">
                     <h1 class="mb-2 fw-bolder" style="color: #fff;">BATARA</h1>

@@ -62,6 +62,22 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../assets/js/config.js"></script>
+    <style>
+      @media (max-width: 800px) {
+        #col-1 {
+          display: none;
+        }
+        #gambar {
+          width: 0vh;
+          display: none;
+        }
+        #col-2 {
+         min-height: 100vh;
+         min-width: 100vh;
+        }
+      }
+
+    </style>
   </head>
 
   <body>
@@ -86,8 +102,20 @@
     <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-
     <script src="../assets/vendor/js/menu.js"></script>
+
+    <!-- <script>
+      window.addEventListener('DOMContentLoaded', checkWindowSize);
+      window.addEventListener('resize', checkWindowSize);
+
+      function checkWindowSize() {
+        if (window.innerWidth <= 600) {
+          document.getElementById('image').style.display = 'none';
+        } else {
+          document.getElementById('myElement').style.display = 'block';
+        }
+      }
+    </script> -->
     <!-- endbuild -->
 
     <!-- Vendors JS -->
