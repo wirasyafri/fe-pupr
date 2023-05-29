@@ -66,6 +66,8 @@
       @media (max-width: 800px) {
         #col-1 {
           display: none;
+          min-width: 0vh;
+          min-height: 0vh;
         }
         #gambar {
           width: 0vh;
@@ -73,7 +75,7 @@
         }
         #col-2 {
          min-height: 100vh;
-         min-width: 100vh;
+         min-width: 100%;
         }
       }
 

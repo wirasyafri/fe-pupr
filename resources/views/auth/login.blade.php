@@ -1,9 +1,9 @@
 @extends('auth.mainAuth')
 @section('container')
 
-<div class="container-fluid px-0">
+<div class="container-fluid px-0 ">
     <!-- Register -->
-    <div class="row ">
+    <div class="row m-0 p-0">
         <div class="col col-1 col-md-6 d-flex p-0 justify-content-center" id="col-1">
             <img class="m-0" id="gambar" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-JdbM280Rs2Y%2FXjxgQTF6HEI%2FAAAAAAAAAAg%2FYdyLp9V1tDkp2-kaFXCcgc9IeQNxt5o1gCLcBGAsYHQ%2Fs1600%2Fdummy.jpg&f=1&nofb=1&ipt=3c8f3d2c29ec7f51c9b6b49b45d6f443e5f931da80ca0f88f40bbe02faebe9bd&ipo=images"  style="height:100vh;">
         </div>
