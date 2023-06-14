@@ -66,11 +66,13 @@
       @media (max-width: 800px) {
         #col-1 {
           display: none;
-          min-width: 0vh;
-          min-height: 0vh;
+          width: 0vh;
+          height: 0vh;
         }
         #gambar {
           width: 0vh;
+          min-width: 0vh;
+          min-height: 0vh;
           display: none;
         }
         #col-2 {
